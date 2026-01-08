@@ -1,3 +1,5 @@
+import 'dart:ffi';
+
 import 'package:flutter/material.dart';
 import 'package:ui_practice/pages/intro_page.dart';
 import 'package:ui_practice/pages/menu_page.dart';
@@ -18,7 +20,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: const IntroPage(),
+      home: const MenuPage(),
       routes: {
         '/introPage': (context) => const IntroPage(),
         '/menuPage': (context) => const MenuPage(), // Replace with actual MenuPage
